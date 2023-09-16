@@ -54,6 +54,7 @@ def is_profile_complete(user=None):
 def apply_for_job(position):
 	user = frappe.session.user
 
+
 	# Custom Api Checks for Candidate
 	if not frappe.db.exists('Candidate',{'user': user}):
 		frappe.log_error(title='APPLICATION_WITHOUT_CANDIDATE')

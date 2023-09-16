@@ -13,7 +13,7 @@ def validate_candidate_application(candidate, position):
 		frappe.throw('No Such Position Exists')
 
 	position_doc = frappe.get_doc("Open Position", position)
-	
+
 	if not position_doc.status == 'Open':
 		frappe.throw("Position has Closed Applications")
 
@@ -23,9 +23,11 @@ def validate_candidate_application(candidate, position):
 			'position': position
 	}):
 			frappe.throw("Already Applied for This Position")
+	
+	candidate_doc = frappe.get_doc("Candidate", candidate)
 
 	# Profile completeness check
-	if not is_profile_complete(candidate):
+	if not is_profile_complete(candidate_doc.user):
 			frappe.throw("Profile is Not Complete")
 
 
