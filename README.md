@@ -15,6 +15,11 @@ Frontend: rtcamp.akazyti.com
 backend: hr.akazyti.com
 user: Administrator
 pwd: frappe
+
+
+---
+user: hr@akazyti.com
+pwd: frappe123
 ```
 
 
