@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include rtcamp_assignment *.css
+recursive-include rtcamp_assignment *.csv
+recursive-include rtcamp_assignment *.html
+recursive-include rtcamp_assignment *.ico
+recursive-include rtcamp_assignment *.js
+recursive-include rtcamp_assignment *.json
+recursive-include rtcamp_assignment *.md
+recursive-include rtcamp_assignment *.png
+recursive-include rtcamp_assignment *.py
+recursive-include rtcamp_assignment *.svg
+recursive-include rtcamp_assignment *.txt
+recursive-exclude rtcamp_assignment *.pyc

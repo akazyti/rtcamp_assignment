@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-15 13:27:01.656043",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate",
+  "position",
+  "user",
+  "applied_as",
+  "interview_section",
+  "interview_scheduled"
+ ],
+ "fields": [
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "Open Position"
+  },
+  {
+   "fieldname": "candidate",
+   "fieldtype": "Link",
+   "label": "Email",
+   "options": "Candidate"
+  },
+  {
+   "fetch_from": "candidate.full_name",
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "Candiate Name"
+  },
+  {
+   "fetch_from": "position.title",
+   "fieldname": "applied_as",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Applied As"
+  },
+  {
+   "fieldname": "interview_section",
+   "fieldtype": "Section Break",
+   "label": "Interview"
+  },
+  {
+   "default": "0",
+   "fieldname": "interview_scheduled",
+   "fieldtype": "Check",
+   "label": "Interview Scheduled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-16 00:56:59.269312",
+ "modified_by": "Administrator",
+ "module": "Rtcamp Assignment",
+ "name": "Candidate Application",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Student"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "user"
+}

@@ -1,0 +1,17 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2023-09-15 17:29:35.852581",
+  "name": "Student",
+  "role_profile": "Student",
+  "roles": [
+   {
+    "parent": "Student",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Student"
+   }
+  ]
+ }
+]

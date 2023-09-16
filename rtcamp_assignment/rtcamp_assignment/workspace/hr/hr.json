@@ -1,0 +1,50 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"_93FBK1DZ6\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">HR</span>\",\"col\":12}},{\"id\":\"YvM4QKN3dN\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Candidates\",\"col\":4}},{\"id\":\"hFH8np_tYm\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Open Positions\",\"col\":4}},{\"id\":\"R_t1MXXnPL\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"eu9cmOl3SC\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Candidates\",\"col\":4}},{\"id\":\"yh4BtzFXz8\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Open Position\",\"col\":4}},{\"id\":\"MX4uPXwR7r\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Recent Applications\",\"col\":4}}]",
+ "creation": "2023-09-15 13:42:32.304047",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "HR",
+ "links": [],
+ "modified": "2023-09-15 13:51:14.472806",
+ "modified_by": "Administrator",
+ "module": "Rtcamp Assignment",
+ "name": "HR",
+ "number_cards": [
+  {
+   "label": "Open Positions",
+   "number_card_name": "Total Positions"
+  },
+  {
+   "label": "Total Candidates",
+   "number_card_name": "Total Candidates"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Candidate",
+   "label": "Candidates"
+  },
+  {
+   "document_type": "Open Position",
+   "label": "Open Position"
+  },
+  {
+   "document_type": "Candidate Application",
+   "label": "Recent Applications"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "HR"
+}

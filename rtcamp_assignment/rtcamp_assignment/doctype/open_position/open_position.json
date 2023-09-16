@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-09-15 12:45:02.513295",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "status",
+  "minimum_experience",
+  "maximum_experience",
+  "location",
+  "job_description",
+  "naming_series"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "minimum_experience",
+   "fieldtype": "Int",
+   "label": "Minimum Experience"
+  },
+  {
+   "fieldname": "maximum_experience",
+   "fieldtype": "Int",
+   "label": "Maximum Experience"
+  },
+  {
+   "fieldname": "job_description",
+   "fieldtype": "Text Editor",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "OPN-POS-"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  }
+ ],
+ "links": [
+  {
+   "link_doctype": "Candidate Application",
+   "link_fieldname": "position"
+  }
+ ],
+ "modified": "2023-09-16 18:13:13.227178",
+ "modified_by": "Administrator",
+ "module": "Rtcamp Assignment",
+ "name": "Open Position",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "role": "Student",
+   "select": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "title",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}
