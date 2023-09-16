@@ -1,18 +1,22 @@
 ## Rtcamp Assignment
 
 
-> Major Code is in api folder and respective doctypes
+> Major Code is in api folder and respective DocTypes
 
-Demo URL:
+
 
 **For students**
+
+For Students They will Come and will do Signup
 ```
-Frontend: rtcamp.akazyti.com
+Frontend Demo URL: rtcamp.akazyti.com
 ```
 
 **For HR**
+
+(Basically HR Peoples will Use This URL (hr.akazyti.com) to do their administrative stuff)
 ```
-backend: hr.akazyti.com
+backend Demo URL: hr.akazyti.com
 user: Administrator
 pwd: frappe
 
@@ -24,27 +28,27 @@ pwd: frappe123
 
 
 ```
-demo video: 
+demo video: https://drive.google.com/file/d/1tDiQx7fetBGQT0DCVg2ySeaEQgOa8Ssz/view?usp=sharing
 ```
 
 
 Here is the Proposed Solution The Application Consists of 2 Faces.
 
-1. For HR User to Do their Admistriative Tasks which is Vanilla Frappe(version-14)
-2. A Place for Candidates to do Signup and See Jobs, Done using React with Parcel as Bundler
+1. For HR User to Do their Administrative Tasks which is Vanilla Frappe(version-14)
+2. A Place for Candidates to do SignUp and See Jobs, Done using React with Parcel as Bundler
 
-### Why Followind Decision is Taken ?
+### Why Following Decision is Taken ?
 
 1. Frappe/ERPNext is Good for Internal Team and Tools but The Website Part of Frappe Framework is not
-That Flexible the Amout of Time it Takes to Do HTML and Relese Forms and Deal with Version Changes
+That Flexible the Amount of Time it Takes to Do HTML and Release Forms and Deal with Version Changes
 Bugs are Much More than Just Using React / Vue or Anything Else.. This Provides Some Room for Extension for App and some freedom of Choice.
 
-2. Frappe By Itself Disables Signup. Our Signup is Done using A Special API can be found in api folder in auth file. This Just Leaves Room for Students to Do Signup via API or Administrators Add HR People to Portal
+2. Frappe By Itself Disables Sighup. Our Sighup is Done using A Special API can be found in api folder in auth file. This Just Leaves Room for Students to Do Sighup via API or Administrators Add HR People to Portal
 
 ### DocTypes
 
 1. Candidate : For Keeping Information About Candidate There
-2. Open Position: Open Posistions in App
+2. Open Position: Open Positions in App
 3. Candidate Application: Job Applications Candidate Apply
 
 > The Names are Selected keeping Doctype Names Don't clash with ERPNext when Installed There and Can be Extendable with Hooks There. This App can Integrate with HRMS / ERPNext in Future via Hooks Using A Integrator App
@@ -59,7 +63,7 @@ There are Following Roles By App
 > Following As well is Done to  so that it don't clash with ERPNext or Frappe if Required
 
 HR can do Following Things
-1. CRUD on Candidate, Job Openeings and Applicants
+1. CRUD on Candidate, Job Openings and Applicants
 
 Candidate 
 1. Read it's Own Information 
@@ -77,9 +81,9 @@ Done via React App and API
 
 ##### After logging in they should be able to edit information
 
-This is also done via custom api and Profile Page Can be Accessable from Navbar
+This is also done via custom api and Profile Page Can be Accessible from Navbar
 
-1. Email Can't be changed becuase that requires a authentication method in real life. for now i have not provided into edit section
+1. Email Can't be changed because that requires a authentication method in real life. for now i have not provided into edit section
 
 ##### They should be able to see all the Job Openings
 
@@ -98,12 +102,12 @@ From Profile Page
 
 ##### HR should be able to do CRUD operations on the student data, Job Opening and Job Applicant
 
-HR Should Login to Portal from FRAPPE UI not the Candiates Open Portal
+HR Should Login to Portal from FRAPPE UI not the Candidates Open Portal
 
 
 ##### HR should be able to create bulk interviews. I.e. Selecting multiple the Job Applicants, click on `Actions` and then select `Schedule Interview` option from the `Action List`.
 
-1. Goto Candidate Applicatins Page
+1. Goto Candidate Applications Page
 2. Select All Candidates
 3. Click Schedule Interview
 4. It will Schedule the Jobs in Background using Background Jobs
@@ -125,17 +129,17 @@ HR Should Login to Portal from FRAPPE UI not the Candiates Open Portal
    1. Realtime Updates
 	 2. Background jobs
 	 3. Frappe Whitelist API -> For Providing Custom API
-	 4. Fraooe Error Logging
+	 4. Frappe Error Logging
 	 5. Frappe Hooks => 
 
-			1. Class Based for Now becuase it's a vannila App
+			1. Class Based for Now because it's a vanilla App
 			2. hooks.py file is not used because we are not customizing any application
 
   3. What App Bundles with
 		- 2 Roles, HR and Student
-		- 1 Role Profile Calles Students
+		- 1 Role Profile Called Students
 		- 1 User which is Default System Manager (Because this is Dummy App)
-		- Some Dummy Job Openeings
+		- Some Dummy Job Openings
 
 
 ### Installation
